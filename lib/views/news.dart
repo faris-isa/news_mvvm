@@ -7,12 +7,15 @@ import 'news_detail.dart';
 class NewsView extends StatelessWidget {
   const NewsView({super.key});
 
+  static const String routeName = '/news';
+
   @override
   Widget build(BuildContext context) {
     final newsRepo = NewsViewModel();
     return Scaffold(
       appBar: AppBar(
         title: const Text('News App'),
+        backgroundColor: Colors.green,
       ),
       body: FutureBuilder<NewsModels>(
         future: newsRepo.getNews(),
@@ -57,6 +60,7 @@ class NewsView extends StatelessWidget {
                           height: 75,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
+                            color: Colors.grey,
                           ),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
