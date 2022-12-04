@@ -1,6 +1,6 @@
 # news_mvvm
 
-A new Flutter project.
+Flutter final project about using news api using mvvm architecture for OOP subject in EEPIS .
 
 ## Getting Started
 
